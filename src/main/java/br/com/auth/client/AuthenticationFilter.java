@@ -41,6 +41,7 @@ public class AuthenticationFilter implements Filter {
 						JSONObject jsonObject = new JSONObject(cookie.getValue());
 						String userId = jsonObject.get(ParamName.USER_ID).toString();
 						
+						
 						if (!userId.equals("0")) {
 							hasSession = true;
 							filterChain.doFilter(servletRequest, servletResponse);
