@@ -5,5 +5,6 @@ public interface ParamName {
 	public static final String SESSION_COOKIE = "session";
 	public static final String USER_ID = "userId";
 	public static final String URL = "url";
+	public static final String TENANT = "tenant";
 	
 }
